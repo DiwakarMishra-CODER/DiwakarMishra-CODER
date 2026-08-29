@@ -12,19 +12,25 @@ I pick problems that need more than a database. B.Tech CSE-AI at Maharaja Agrase
 
 ### [Starweave](https://starweaves.vercel.app/) — 1,053 influence edges across 297 artists
 
-Influence isn't the same as sounding similar — a band can shape another that sounds nothing like it, so no audio algorithm can find these links. They have to be sourced: 908 of 1,053 cite a named source, 562 the artist's own words, plus 30 recorded denials. Ask how two artists connect and a Dijkstra search, weighted by how well each link is sourced, traces the best-documented chain rather than the shortest — chains with a poorly-sourced link fell from 71% to 11%, for about one extra artist in between.
+[![Starweave](https://diwakar-mishra-portfolio.vercel.app/projects/starweave.png)](https://starweaves.vercel.app/)
+
+Influence isn't the same as sounding similar — a band can shape another that sounds nothing like it, so no audio algorithm can find these links. Every edge is sourced by hand: 908 of 1,053 cite a named source, 562 the artist's own words. The 145 nobody has said on the record are marked `unsourceable` rather than quietly asserted, and 30 recorded denials are stored separately so a myth an artist has rejected can't be rediscovered later. Asking how two artists connect runs Dijkstra over a cost function where the hop price *is* the citation tier — 0.10 for the artist's own words, 0.85 for unsourced — so the search returns the best-evidenced route, not the shortest one. Weakly-sourced links on the average route drop from 70% to 11% for under one extra hop.
 
 `Next.js` `TypeScript` `d3-force` `Canvas API` — [Live](https://starweaves.vercel.app/) · [Source](https://github.com/DiwakarMishra-CODER/starweave)
 
 ### [Arthouse Atlas](https://arthouse-atlas.vercel.app/) — 497 curated films across 12 movements
 
-497 films kept from a much longer list — built up from critics' polls and festival canons, then trimmed whenever something too mainstream slipped in. A taste profile weights what you did rather than what you clicked: favorites 3x, watched 1.5x, watchlist 1x, scoring 200 candidates per request.
+[![Arthouse Atlas](https://diwakar-mishra-portfolio.vercel.app/projects/arthouse-atlas.png)](https://arthouse-atlas.vercel.app/)
+
+497 films kept from a much longer list, curated across directors, movements, and decades. Every ranking is arithmetic you can read, not a model you have to trust: the Explore feed scores each film on `0.60 × canon + 0.20 × recency + 0.10 × rarity + 0.10 × daily rotation`, and every film returned increments its own show count — so the rarity term keeps doing its job and the canon doesn't win every single visit. Recommendations run the same honesty on top: a taste profile weighted by interaction type (favorites 3x, watched 1.5x, watchlist 1x) scores 200 candidates per request.
 
 `React` `Node.js` `Express` `MongoDB` `TMDB API` — [Live](https://arthouse-atlas.vercel.app/) · [Source](https://github.com/DiwakarMishra-CODER/Arthouse-Atlas)
 
 ### [CareerSaarthi](https://careersaarthi.vercel.app/) — 6 AI tools behind one career workflow
 
-Built with a team at my first hackathon. A teacher asked what made our resume analyser unique and we had no answer, so we built the other five tools around it — these exist scattered across the internet behind separate logins, and here they share context. The voice coach speaks each question, transcribes live, auto-submits on the timer, and scores clarity, STAR structure, and keyword density.
+[![CareerSaarthi](https://diwakar-mishra-portfolio.vercel.app/projects/careersaarthi.png)](https://careersaarthi.vercel.app/)
+
+Built with a team at my first hackathon. A teacher asked what made our resume analyser unique and we had no answer, so we built the other five tools around it — these exist scattered across the internet behind separate logins, and here they share context. No provider key ever reaches the browser: every OpenRouter and Gemini call is proxied through Express, with a pool of Gemini keys rotated per request and backed off on rate limits instead of hard-failing. The voice coach speaks each question, transcribes live, auto-submits after 2.5 seconds of detected silence, and scores clarity, STAR structure, and keyword density.
 
 `React` `Supabase` `Web Speech API` `GPT-4o-mini` — [Live](https://careersaarthi.vercel.app/) · [Source](https://github.com/DiwakarMishra-CODER/CareerSaarthi)
 
@@ -46,14 +52,6 @@ Built with a team at my first hackathon. A teacher asked what made our resume an
 - **Layout is an algorithm.** Starweave's genre map packs 53 timelines into the fewest rows — heavy-path decomposition, greedy interval colouring, no labels colliding.
 - **Curate by cutting.** Critics' polls and festival canons don't agree on one list. Arthouse Atlas merges them, then cuts what's too mainstream.
 - **Plan for the API failing.** Rate limits, dead APIs, blank screens. A cache absorbs the first; fallbacks cover the rest.
-
----
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://leetcard.jacoblin.cool/DiwakarCracksIt?theme=dark&font=baloo2" />
-  <source media="(prefers-color-scheme: light)" srcset="https://leetcard.jacoblin.cool/DiwakarCracksIt?theme=light&font=baloo2" />
-  <img src="https://leetcard.jacoblin.cool/DiwakarCracksIt?theme=light&font=baloo2" alt="LeetCode stats" width="500" />
-</picture>
 
 ---
 
