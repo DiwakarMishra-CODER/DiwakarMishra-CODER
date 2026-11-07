@@ -4,7 +4,15 @@ Software engineer. I build complete products — data model, algorithm, interfac
 
 B.Tech CSE-AI at Maharaja Agrasen Institute of Technology, Delhi — CGPA 9.43/10, graduating 2028. Both projects below are built around one question: *why should you believe this?* Starweave won't draw a line between two bands unless someone said it on the record, and links you to where they said it. Arthouse Atlas won't rank one film above another unless the critics' lists agree, and shows you the arithmetic.
 
-`TypeScript` `JavaScript` `React` `Next.js` `Node.js` `Express` `MongoDB` `Tailwind CSS` `Canvas API` `d3` `framer-motion` `Vitest` `GitHub Actions` `C++` `SQL`
+`TypeScript` `JavaScript` `React` `Next.js` `Node.js` `Express` `MongoDB` `PostgreSQL` `Tailwind CSS` `Canvas API` `d3` `framer-motion` `Vitest` `GitHub Actions` `C++` `SQL`
+
+---
+
+## Take the tour
+
+[![My portfolio: a 3D me waits to show you around](assets/portfolio.png)](https://diwakar-mishra-portfolio.vercel.app/)
+
+**[diwakar-mishra-portfolio.vercel.app](https://diwakar-mishra-portfolio.vercel.app/)**: a 3D me walks you through it, and both projects' real code runs right in the page. Tap an artist and see every link's proof, with its source. Tap a film you love, and the actual recommender picks your next one.
 
 ---
 
@@ -45,8 +53,8 @@ A full-stack atlas of arthouse cinema covering 1,120 films, 238 directors, 27 mo
 | | |
 |---|---|
 | **9.43 / 10** | CGPA · B.Tech CSE-AI |
-| **1800+** | LeetCode contest rating · [350+ solved](https://leetcode.com/u/DiwakarCracksIt/) |
-| **Semi-Finalist** | Flipkart GRiD 8.0 — national |
+| **1875 · Knight** | LeetCode contest rating · [396 solved](https://leetcode.com/u/DiwakarCracksIt/) |
+| **Semi-Finalist** | Flipkart GRiD 8.0 · out of 170,000+ registrations |
 | **Neighbourly Choice** | Award for [CareerSaarthi](https://github.com/DiwakarMishra-CODER/CareerSaarthi), a team-built AI career toolkit · [CodeX Hackathon, MAIT](https://drive.google.com/file/d/1twj-CP21e-ugMuo01qvEr7PJ1mL4SFJ1/view?usp=sharing) |
 
 ---
@@ -61,7 +69,7 @@ A full-stack atlas of arthouse cinema covering 1,120 films, 238 directors, 27 mo
 
 ## Let's talk
 
-Graduating 2028, based in Delhi. Open to SDE internships now and new-grad roles after that.
+Looking for a software engineering internship: frontend, backend or full-stack, remote or in Delhi NCR. I can start now.
 
 [diwakarmishraemail@gmail.com](mailto:diwakarmishraemail@gmail.com) · [Portfolio](https://diwakar-mishra-portfolio.vercel.app/) · [LinkedIn](https://www.linkedin.com/in/diwakar-mishra-dev) · [LeetCode](https://leetcode.com/u/DiwakarCracksIt/)
 
